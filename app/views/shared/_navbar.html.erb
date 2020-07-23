@@ -22,6 +22,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
+                <%= image_tag avatar_url(current_user), class: 'avatar-small rounded-circle' %>&nbsp;
                 <%= current_user.fullname %>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
