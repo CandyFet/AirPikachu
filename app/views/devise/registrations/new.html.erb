@@ -27,8 +27,13 @@
           <%= link_to 'Forgot Password', new_user_password_path %>
       </span>
 
-      <div class="actions d-flex justify-content-center">
+      <div class="actions">
         <%= f.submit "Sign up", class: 'btn btn-success' %>
+      </div>
+      
+      <hr/>
+      <div class="actions d-flex justify-content-center">
+        <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class:'btn btn-primary' %>
       </div>
     <% end %>
   </div>
